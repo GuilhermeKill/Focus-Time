@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --bg-color: #E5E5E5;
+
+    --bg-buttonColor: #E1E1E6;
+    --bg-buttonColorSecondary: #02799D;
+    --tt-buttonColor: black;
+
+
+
+    --bg-colorTwo: #121214;
+    --bg-buttonTwo: #0A3442;
+    --bg-buttonDark: #29292E;
+    --tt-buttonColorSecondary: white;
+
+
+    font-size: 62.5%;
+}
+
+body{
+    margin-top: 20rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--tt-buttonColor);
+    font-size: 12.6rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+}
+
+svg {
+    fill: black;
+}
+
+.fill svg{
+    fill: #E1E1E6;
+}
+
+.sounds .fill{
+    background-color: #02799D;
+}
+
+
+#controls button{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    height: 4.8rem;
+}
+
+#controls{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    
+    background: none;
+}
+
+.display{
+    display: flex;
+}
+
+#timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.soundsOne, .soundsTwo{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    position: relative;
+    
+}
+  
+.sounds button{
+    background-color: var(--bg-buttonColor);
+    border: none;
+    border-radius: 2.4rem;
+    width: 13.8rem;
+    height: 15.2rem;
+
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lightMode, .darkMode{
+    position: absolute;
+    margin-top: -13rem;
+    margin-left: 67rem;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+input{
+    width: 9rem;
+    height: .6rem;
+    position: relative;
+    top: 4rem;
+}
+
+.fogueira,
+.floresta,
+.chuva,
+.cafeteria
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+/* TELA 2 */
+
+.screanTwo{
+    background: var(--bg-colorTwo);
+    font-style: var(--bg-buttonColor);
+    color: #FFFFFF;
+}
+
+.floresta.buttonScreanTwo,
+.cafeteria.buttonScreanTwo,
+.chuva.buttonScreanTwo,
+.fogueira.buttonScreanTwo{
+    background: var(--bg-buttonDark);
+}
+
+.floresta.buttonScreanTwo svg,
+.cafeteria.buttonScreanTwo svg,
+.chuva.buttonScreanTwo svg,
+.fogueira.buttonScreanTwo svg{
+    fill: var(--bg-buttonColor);
+}
+
+.buttonScreanTwo.fillDark{
+    background-color: var(--bg-buttonTwo);
+}
+
+#controls.buttonScreanTwo svg{
+    fill: #E1E1E6;
+}
+
+
+
+@media(max-width: 780px){
+    body{
+        
+        
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 10rem;
+    }
+
+    .lightMode, .darkMode{
+        margin-top: -5rem;
+        margin-left: 27rem;
+    }
+
+
+}
